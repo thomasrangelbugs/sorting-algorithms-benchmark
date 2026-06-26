@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparativo de Algoritmos de Ordenação</title>
+    <meta
+      name="description"
+      content="Atividade comparando o desempenho do Insertion Sort e do Merge Sort com arrays aleatórios de diferentes tamanhos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Estrutura de Dados • Atividade U3</p>
+          <h1>Comparativo de desempenho entre Insertion Sort e Merge Sort</h1>
+          <p class="hero__text">
+            Esta página apresenta a implementação comentada de um algoritmo de
+            ordenação simples e de um algoritmo eficiente, além de um comparativo
+            de tempo com arrays aleatórios de 100, 1.000, 10.000 e 100.000
+            elementos.
+          </p>
+        </div>
+        <div class="hero__panel">
+          <p class="panel__label">Algoritmos escolhidos</p>
+          <ul class="hero__facts">
+            <li>
+              <strong>Insertion Sort</strong>
+              <span>Método simples com complexidade média O(n²).</span>
+            </li>
+            <li>
+              <strong>Merge Sort</strong>
+              <span>Método eficiente com complexidade O(n log n).</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="card">
+          <h2>Introdução</h2>
+          <p>
+            O <strong>Insertion Sort</strong> percorre o vetor inserindo cada
+            elemento na posição correta dentro da parte já ordenada. A estratégia
+            é simples de entender e implementar, mas seu custo cresce rapidamente
+            quando a quantidade de dados aumenta.
+          </p>
+          <p>
+            O <strong>Merge Sort</strong> usa a técnica de divisão e conquista:
+            ele divide o problema em partes menores, ordena recursivamente cada
+            parte e depois realiza a intercalação dos resultados. Essa abordagem
+            tende a ser muito mais estável para grandes volumes de dados.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Metodologia</h2>
+          <p>
+            Para os testes, foram gerados arrays com números inteiros aleatórios
+            e os dois algoritmos ordenaram exatamente os mesmos dados em cada
+            cenário.
+          </p>
+          <ul class="list">
+            <li>Tamanhos avaliados: 100, 1.000, 10.000 e 100.000 elementos.</li>
+            <li>Unidade de medida adotada: milissegundos (<strong>ms</strong>).</li>
+            <li>
+              Os resultados foram calculados por média de múltiplas execuções nos
+              casos menores e uma execução no caso de 100.000 elementos, onde o
+              algoritmo simples já se torna muito custoso.
+            </li>
+            <li>
+              O código confirma se o array ficou em ordem crescente após cada
+              teste, evitando medições de resultados incorretos.
+            </li>
+          </ul>
+        </section>
+
+        <section class="card card--wide">
+          <div class="section-heading">
+            <div>
+              <h2>Resultados</h2>
+              <p class="section-subtitle">
+                Tabela comparativa de tempo de execução em <strong>ms</strong>.
+              </p>
+            </div>
+            <div class="pill" id="environment-pill">Carregando medições...</div>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tamanho do array</th>
+                  <th>Insertion Sort (ms)</th>
+                  <th>Merge Sort (ms)</th>
+                  <th>Diferença</th>
+                </tr>
+              </thead>
+              <tbody id="results-body"></tbody>
+            </table>
+          </div>
+
+          <div class="chart" id="bars-container" aria-label="Comparativo visual"></div>
+        </section>
+
+        <section class="card">
+          <h2>Resultados e Discussão</h2>
+          <div id="discussion-content" class="discussion"></div>
+        </section>
+
+        <section class="card">
+          <h2>Código-fonte comentado</h2>
+          <p>
+            Os arquivos abaixo podem ser acessados diretamente e servem como link
+            do código-fonte utilizado na atividade:
+          </p>
+          <ul class="list link-list">
+            <li><a href="./sorting.js" target="_blank" rel="noreferrer">sorting.js</a></li>
+            <li><a href="./scripts/benchmark.mjs" target="_blank" rel="noreferrer">scripts/benchmark.mjs</a></li>
+            <li><a href="./README.md" target="_blank" rel="noreferrer">README.md</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
