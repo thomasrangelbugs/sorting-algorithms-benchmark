@@ -1,34 +1,41 @@
-# Comparativo de Algoritmos de Ordenação
+﻿# Sorting Algorithms Benchmark
 
-Projeto estático preparado para publicação no Netlify com:
+> Comparativo academico entre Insertion Sort e Merge Sort com medicoes reais.
 
-- implementação comentada de `Insertion Sort` e `Merge Sort`;
-- tabela comparativa com tempos em milissegundos (`ms`);
-- texto de introdução, metodologia e discussão dos resultados.
+## Sobre o projeto
 
-## Arquivos principais
+Projeto academico que implementa, documenta e compara dois algoritmos de ordenacao: Insertion Sort e Merge Sort. A pagina web apresenta codigo comentado, metodologia de teste, tabela comparativa com tempos em milissegundos e analise dos resultados. Inclui script Node.js para regenerar benchmarks de forma reproduzivel.
 
-- `index.html`: documento principal da atividade.
-- `styles.css`: visual da página.
-- `sorting.js`: implementação comentada dos algoritmos.
-- `scripts/benchmark.mjs`: script Node.js usado para gerar os resultados.
-- `benchmark-results.js`: arquivo com as medições exibidas no site.
+## Funcionalidades principais
 
-## Como atualizar os benchmarks
+- Implementacao comentada de Insertion Sort e Merge Sort
+- Tabela comparativa com tempos medidos em milissegundos
+- Script Node.js para geracao automatizada de benchmarks
+- Secoes de introducao, metodologia e discussao
+- Site estatico pronto para Netlify
 
-```bash
-npm run benchmark
-```
+## Tecnologias utilizadas
 
-O comando executa os testes e sobrescreve o arquivo `benchmark-results.js`.
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Netlify
 
-## Como publicar no Netlify
+## Como executar
 
-1. Compacte ou envie esta pasta para um repositório.
-2. No Netlify, crie um novo site importando o projeto ou faça drag-and-drop da pasta.
-3. Como o projeto é estático, não é necessário comando de build.
-4. O diretório de publicação é a raiz do projeto (`.`), já configurado em `netlify.toml`.
+Abra index.html no navegador. Para atualizar benchmarks: npm run benchmark.
 
-## Observação
+## Deploy / Demonstracao
 
-Os tempos medidos podem variar de acordo com o navegador, processador e carga da máquina utilizada.
+Site estatico - publique a raiz no Netlify.
+
+## Repositorio
+
+[github.com/thomasrangelbugs/sorting-algorithms-benchmark](https://github.com/thomasrangelbugs/sorting-algorithms-benchmark)
+
+## Autor
+
+**Thomas Rangel Bugs**
+
+Desenvolvido para portfolio, estudo e pratica de desenvolvimento web/mobile.
