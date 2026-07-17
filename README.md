@@ -1,41 +1,65 @@
-﻿# Sorting Algorithms Benchmark
+# Comparativo de Insertion Sort e Merge Sort
 
-> Comparativo academico entre Insertion Sort e Merge Sort com medicoes reais.
+Atividade acadêmica que implementa e compara Insertion Sort e Merge Sort, exibindo código, metodologia e resultados de benchmark em uma página estática.
 
-## Sobre o projeto
+## Requisitos
 
-Projeto academico que implementa, documenta e compara dois algoritmos de ordenacao: Insertion Sort e Merge Sort. A pagina web apresenta codigo comentado, metodologia de teste, tabela comparativa com tempos em milissegundos e analise dos resultados. Inclui script Node.js para regenerar benchmarks de forma reproduzivel.
+- Node.js para regenerar os benchmarks
+- Navegador moderno para visualizar o relatório
 
-## Funcionalidades principais
+## Funcionalidades
 
-- Implementacao comentada de Insertion Sort e Merge Sort
-- Tabela comparativa com tempos medidos em milissegundos
-- Script Node.js para geracao automatizada de benchmarks
-- Secoes de introducao, metodologia e discussao
-- Site estatico pronto para Netlify
+- Implementações dos dois algoritmos
+- Medição de tempo
+- Resultados consumidos pela página
+- Discussão de complexidade e desempenho
 
-## Tecnologias utilizadas
+## Tecnologias
 
 - HTML
 - CSS
 - JavaScript
 - Node.js
-- Netlify
 
-## Como executar
+## Instalação
 
-Abra index.html no navegador. Para atualizar benchmarks: npm run benchmark.
+```bash
+npm install
+```
 
-## Deploy / Demonstracao
+## Scripts disponíveis
 
-Site estatico - publique a raiz no Netlify.
+- `npm run benchmark — executa `scripts/benchmark.mjs``
 
-## Repositorio
+Execute somente os scripts listados acima; eles foram conferidos no `package.json`.
 
-[github.com/thomasrangelbugs/sorting-algorithms-benchmark](https://github.com/thomasrangelbugs/sorting-algorithms-benchmark)
+## Estrutura principal
 
-## Autor
+- `sorting.js — algoritmos`
+- `scripts/benchmark.mjs — coleta dos tempos`
+- `benchmark-results.js — resultados usados na página`
+- `app.js — apresentação`
+- `index.html — relatório`
 
-**Thomas Rangel Bugs**
+## Como usar
 
-Desenvolvido para portfolio, estudo e pratica de desenvolvimento web/mobile.
+- Execute `npm run benchmark` quando quiser atualizar os resultados.
+- Abra `index.html` para consultar o relatório atualizado.
+
+## Testes e validação
+
+- Não há script `test` no `package.json`.
+- Confira se o benchmark termina sem erro e se `index.html` apresenta os valores gerados.
+
+## Publicação
+
+- O `netlify.toml` publica a pasta atual (`.`) sem build.
+
+## Limitações
+
+- Tempos variam conforme máquina, versão do Node e carga do sistema.
+- Benchmark não substitui análise assintótica.
+
+## Repositório
+
+[redobrai-del/thomas-projetos](https://github.com/redobrai-del/thomas-projetos)
