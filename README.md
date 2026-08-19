@@ -1,4 +1,4 @@
-# Comparativo de Insertion Sort e Merge Sort
+﻿# Comparativo de Insertion Sort e Merge Sort
 
 Atividade acadêmica que implementa e compara Insertion Sort e Merge Sort, exibindo código, metodologia e resultados de benchmark em uma página estática.
 
@@ -62,4 +62,8 @@ Execute somente os scripts listados acima; eles foram conferidos no `package.jso
 
 ## Repositório
 
-[redobrai-del/thomas-projetos](https://github.com/redobrai-del/thomas-projetos)
+[thomasrangelbugs/sorting-algorithms-benchmark](https://github.com/thomasrangelbugs/sorting-algorithms-benchmark)
+
+## Autor
+
+**Thomas Rangel Bugs** — [github.com/thomasrangelbugs](https://github.com/thomasrangelbugs)
